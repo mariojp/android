@@ -2,6 +2,7 @@ package com.example.exemplo1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.TextureView;
 import android.view.View;
