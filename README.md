@@ -23,7 +23,17 @@ Criar um projeto com duas Activity na primeira colocar um campo de texto e um bo
 
 ### ATIVIDADE 4: Exemplo3
 
-Criar um projeto com uma Activity utilizando o ListView.
+Criar um projeto com uma Activity utilizando o ListView usando um array estatico.
 
 ### ATIVIDADE 4: Exemplo4
-Criar um projeto com uma Activity utilizando o ListView.
+Criar um projeto com uma Activity utilizando o ListView usando um List dinamico.
+- Criar uma Activite para adicionar itens a lista.
+
+
+### ATIVIDADE 5: Exemplo5
+Criar um projeto com uma Activity utilizando o ListView usando um List dinamico.
+- Criar um Model para o Item com id, nome e descricao.
+- Criar um Adapter personalizado.
+- Criar a função que permita Editar
+- Criar a função que permita Excluir
+
