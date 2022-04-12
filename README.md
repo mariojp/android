@@ -23,8 +23,7 @@ Criar um projeto com duas Activity na primeira colocar um campo de texto e um bo
 
 ### ATIVIDADE 4: Exemplo3
 
-Criar um projeto com duas Activity na primeira colocar um campo de texto e um botão e na segunda colocar um rotulo. O usuario deve digitar o texto na primeria activity e esse texto deve ser passado para segunda activity. Isso deve ser feito utilizando uma intenção (Intent)
-
+Criar um projeto com uma Activity utilizando o ListView.
 
 ### ATIVIDADE 4: Exemplo4
 Criar um projeto com uma Activity utilizando o ListView.
