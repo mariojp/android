@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/tituloFragment">
+
+    <fragment
+        android:id="@+id/tituloFragment"
+        android:name="br.com.mariojp.quiz.TituloFragment"
+        android:label="Quiz"
+
+        tools:layout="@layout/fragment_titulo">
+        <action
+            android:id="@+id/action_tituloFragment_to_jogoFragment"
+            app:destination="@id/jogoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jogoFragment"
+        android:name="br.com.mariojp.quiz.JogoFragment"
+        android:label="Jogo"
+        tools:layout="@layout/fragment_jogo">
+        <action
+            android:id="@+id/action_jogoFragment_to_sucessoFragment"
+            app:destination="@id/sucessoFragment"
+            app:popUpTo="@id/sucessoFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_jogoFragment_to_erroFragment"
+            app:destination="@id/erroFragment"
+            app:popUpTo="@id/erroFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/sucessoFragment"
+        android:name="br.com.mariojp.quiz.SucessoFragment"
+        android:label="fragment_sucesso"
+        tools:layout="@layout/fragment_sucesso" />
+    <fragment
+        android:id="@+id/erroFragment"
+        android:name="br.com.mariojp.quiz.ErroFragment"
+        android:label="fragment_erro"
+        tools:layout="@layout/fragment_erro" >
+        <action
+            android:id="@+id/action_erroFragment_to_jogoFragment"
+            app:destination="@id/jogoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sobreFragment"
+        android:name="br.com.mariojp.quiz.SobreFragment"
+        android:label="fragment_sobre"
+        tools:layout="@layout/fragment_sobre" />
+
+</navigation>
