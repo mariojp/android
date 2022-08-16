@@ -1,13 +1,12 @@
 package com.example.exemplo4;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -30,12 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
         botao = findViewById(R.id.main_button_add);
 
-        botao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,AddActivity.class);
-                startActivity(intent);
-            }
+        botao.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,AddActivity.class);
+            startActivity(intent);
         });
 
     }
@@ -43,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        ListAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,array);
+        ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, array);
         listView.setAdapter(adapter);
     }
 }
